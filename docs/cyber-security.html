@@ -54,6 +54,18 @@
         h3 { font-size: 1.5rem; line-height: 2rem; }
         h4 { font-size: 1.25rem; line-height: 1.75rem; }
     </style>
+    <script>
+        // SVG Diamond shape helper
+        function createDiamond(x, y, width, height, fill, stroke, strokeWidth) {
+            const points = [
+                x + width/2, y,                    // top
+                x + width, y + height/2,          // right
+                x + width/2, y + height,          // bottom
+                x, y + height/2                   // left
+            ].join(' ');
+            return `<polygon points="${points}" fill="${fill}" stroke="${stroke}" stroke-width="${strokeWidth}"/>`;
+        }
+    </script>
 </head>
 <body class="text-gray-900">
 
@@ -85,50 +97,601 @@
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <div class="bg-white p-6 sm:p-8">
-            <h1 class="font-bold mb-6">Cyber Security Agent</h1>
+            <h1 class="font-bold mb-6">Project Memcrypt: Sovereign AI Agent for Real-Time Volatile Memory Threat Neutralization</h1>
 
-            <p class="text-xl text-gray-700 mb-6">
-                Advanced AI-powered cybersecurity solutions for threat detection, incident response, and compliance automation.
+            <p class="text-xl text-gray-700 mb-8">
+                Advanced AI-powered cybersecurity solution for real-time detection and neutralization of in-memory threats, designed to secure the UK's critical national infrastructure against sophisticated state-sponsored cyber attacks.
             </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                <div class="border border-gray-300 p-6">
-                    <h3 class="font-bold text-lg mb-3">Threat Detection</h3>
-                    <p class="text-gray-600">Real-time threat detection using machine learning algorithms and behavioral analysis.</p>
-                </div>
-                <div class="border border-gray-300 p-6">
-                    <h3 class="font-bold text-lg mb-3">Incident Response</h3>
-                    <p class="text-gray-600">Automated incident response workflows with AI-driven decision making.</p>
-                </div>
-                <div class="border border-gray-300 p-6">
-                    <h3 class="font-bold text-lg mb-3">Compliance Monitoring</h3>
-                    <p class="text-gray-600">Continuous compliance monitoring and automated reporting for security standards.</p>
+            <!-- Table of Contents -->
+            <div class="border-t border-b border-gray-300 py-6 mb-12">
+                <h2 class="font-bold text-xl mb-4">Project Overview</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <ol class="list-decimal list-inside space-y-2">
+                            <li><a href="#strategic-imperative" class="govuk-link">Strategic Imperative</a></li>
+                            <li><a href="#threat-evolution" class="govuk-link">Evolving Threat Vector</a></li>
+                            <li><a href="#current-defensive-posture" class="govuk-link">Current Defensive Posture</a></li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol class="list-decimal list-inside space-y-2" start="4">
+                            <li><a href="#proposed-innovation" class="govuk-link">Proposed Innovation</a></li>
+                            <li><a href="#project-realization" class="govuk-link">Project Realization</a></li>
+                            <li><a href="#conclusion" class="govuk-link">Conclusion & Funding Rationale</a></li>
+                        </ol>
+                    </div>
                 </div>
             </div>
 
-            <div class="bg-red-50 p-6 rounded mb-6">
-                <h2 class="font-bold text-xl mb-4">Security Capabilities</h2>
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
-                    <li>Advanced threat intelligence integration</li>
-                    <li>Zero-trust architecture implementation</li>
-                    <li>Automated vulnerability assessment</li>
-                    <li>Behavioral anomaly detection</li>
-                    <li>Incident forensics and analysis</li>
-                </ul>
-            </div>
+            <!-- Section 1: Strategic Imperative -->
+            <section id="strategic-imperative" class="mb-12 scroll-mt-24">
+                <h2 class="font-bold border-b-4 border-red-600 pb-2 mb-6">1. The Strategic Imperative for Sovereign In-Memory Defense</h2>
 
-            <div class="bg-blue-50 p-6 rounded">
-                <h2 class="font-bold text-xl mb-4">AI-Powered Features</h2>
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
-                    <li>Machine learning-based threat prediction</li>
-                    <li>Automated security policy enforcement</li>
-                    <li>Intelligent access control</li>
-                    <li>Risk assessment and prioritization</li>
-                    <li>Security awareness training</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">1.1 The Sovereign AI Mandate</h3>
+                    <div class="bg-red-50 p-6 rounded-lg mb-6">
+                        <p class="text-gray-700 mb-4">
+                            The United Kingdom's strategic objective to cultivate and maintain digital sovereignty necessitates the development of indigenous, frontier technologies capable of defending against the most sophisticated cyber threats. The "Sovereign AI - Proof of concept innovation fund competition" directly addresses this imperative, seeking to foster AI technologies that safeguard the UK's future economic growth, security, and geostrategic influence.
+                        </p>
+                        <div class="border-l-4 border-red-600 pl-4">
+                            <p class="font-medium text-gray-800">Project Memcrypt is conceived and designed in direct alignment with this mandate, delivering a specialized AI model for critical infrastructure management and cybersecurity - a specific area of interest for the fund.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">1.2 The Shift to the Volatile Battlefield</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <p class="text-gray-700 mb-4">
+                            The central thesis of this proposal is that the locus of advanced cyber conflict has decisively shifted from persistent, disk-based payloads to the ephemeral, largely unmonitored space of system memory.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="border border-red-300 p-4 rounded">
+                                <h4 class="font-bold text-red-600 mb-2">Traditional Security Paradigm</h4>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li>File scanning</li>
+                                    <li>Signature matching</li>
+                                    <li>Disk forensics</li>
+                                    <li>❌ Increasingly irrelevant</li>
+                                </ul>
+                            </div>
+                            <div class="border border-green-300 p-4 rounded">
+                                <h4 class="font-bold text-green-600 mb-2">Modern Threat Reality</h4>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li>Fileless malware</li>
+                                    <li>In-memory execution</li>
+                                    <li>Memory forensics</li>
+                                    <li>✅ The new battlefield</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 2: Threat Evolution -->
+            <section id="threat-evolution" class="mb-12 scroll-mt-24">
+                <h2 class="font-bold border-b-4 border-red-600 pb-2 mb-6">2. The Evolving Threat Vector: Beyond the Disk</h2>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">2.1 The Anatomy of Fileless and In-Memory Malware</h3>
+                    <div class="space-y-6">
+                        <div class="border border-gray-300 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg mb-3 text-red-600">🔧 Process Hollowing</h4>
+                            <p class="text-gray-700 mb-3">An attacker launches a legitimate, trusted process in a suspended state. The legitimate code is then "hollowed out" and replaced with malicious code, executing under the guise of the legitimate process.</p>
+                            <div class="bg-gray-100 p-3 rounded text-sm font-mono">
+                                Legitimate Process → Suspended → Code Hollowed → Malicious Code Injected → Resumed
+                            </div>
+                        </div>
+
+                        <div class="border border-gray-300 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg mb-3 text-orange-600">📚 Reflective DLL Injection</h4>
+                            <p class="text-gray-700 mb-3">A malicious DLL is loaded directly from memory into a target process's address space, bypassing standard Windows loader mechanisms and security monitoring hooks.</p>
+                            <div class="bg-gray-100 p-3 rounded text-sm font-mono">
+                                Memory Buffer → Manual Dependency Resolution → Direct Injection → Execution
+                            </div>
+                        </div>
+
+                        <div class="border border-gray-300 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg mb-3 text-purple-600">⚙️ Registry-Based Persistence</h4>
+                            <p class="text-gray-700 mb-3">Malicious code embedded directly into Windows Registry keys, configured to execute upon system startup without creating files on disk.</p>
+                            <div class="bg-gray-100 p-3 rounded text-sm font-mono">
+                                Registry Key → Embedded Code → Auto-Execution → Memory Residency
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">2.2 The Kernel as a Battlefield: Advanced Rootkits</h3>
+                    <div class="bg-red-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">Kernel-Level Rootkit Operations</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <h5 class="font-bold mb-2">System Service Hooks</h5>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li>Overwrite SSDT entries</li>
+                                    <li>Inline hooks on kernel functions</li>
+                                    <li>Filter system call results</li>
+                                    <li>Conceal malicious activities</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h5 class="font-bold mb-2">Bootkit Infections</h5>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li>Compromise MBR/UEFI</li>
+                                    <li>Pre-OS execution control</li>
+                                    <li>Kernel patching on-the-fly</li>
+                                    <li>Bypass integrity checks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">2.3 Advanced Persistent Threats (APTs): The In-Memory Kill Chain</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-4">APT Operational Phases in Memory</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                                <div>
+                                    <h5 class="font-bold">Delivery & Exploitation</h5>
+                                    <p class="text-gray-700 text-sm">Fileless payloads establish initial foothold directly in process memory</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-orange-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                                <div>
+                                    <h5 class="font-bold">Command & Control</h5>
+                                    <p class="text-gray-700 text-sm">In-memory implants maintain persistent backdoor communications</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                                <div>
+                                    <h5 class="font-bold">Actions on Objectives</h5>
+                                    <p class="text-gray-700 text-sm">Credential theft, lateral movement, and data staging in memory</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Current Defensive Posture -->
+            <section id="current-defensive-posture" class="mb-12 scroll-mt-24">
+                <h2 class="font-bold border-b-4 border-red-600 pb-2 mb-6">3. The Current Defensive Posture and the Emergent Detection Gap</h2>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">3.1 Critical Assessment of Commercial EDR/XDR Platforms</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse border border-gray-300 mb-6">
+                            <thead>
+                                <tr class="bg-gray-200">
+                                    <th class="border border-gray-300 p-3 text-left">Capability</th>
+                                    <th class="border border-gray-300 p-3 text-center">Project Memcrypt</th>
+                                    <th class="border border-gray-300 p-3 text-center">CrowdStrike Falcon</th>
+                                    <th class="border border-gray-300 p-3 text-center">SentinelOne</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border border-gray-300 p-3 font-medium">Detection Method</td>
+                                    <td class="border border-gray-300 p-3 text-center bg-green-50">Semantic Analysis</td>
+                                    <td class="border border-gray-300 p-3 text-center">Pattern Matching</td>
+                                    <td class="border border-gray-300 p-3 text-center">Behavioral AI</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="border border-gray-300 p-3 font-medium">Zero-Day Detection</td>
+                                    <td class="border border-gray-300 p-3 text-center bg-green-50">Proactive</td>
+                                    <td class="border border-gray-300 p-3 text-center">Reactive</td>
+                                    <td class="border border-gray-300 p-3 text-center">Reactive</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-3 font-medium">Kernel Threat Focus</td>
+                                    <td class="border border-gray-300 p-3 text-center bg-green-50">Real-time Integrity</td>
+                                    <td class="border border-gray-300 p-3 text-center">Limited</td>
+                                    <td class="border border-gray-300 p-3 text-center">Limited</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="border border-gray-300 p-3 font-medium">Hardware Dependency</td>
+                                    <td class="border border-gray-300 p-3 text-center bg-green-50">None</td>
+                                    <td class="border border-gray-300 p-3 text-center">Intel TDT</td>
+                                    <td class="border border-gray-300 p-3 text-center">Intel TDT</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">3.2 The Latency and Expertise Bottleneck</h3>
+                    <div class="bg-orange-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">Traditional Forensics vs. Modern Attacks</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="border border-orange-300 p-4 rounded">
+                                <h5 class="font-bold text-orange-600 mb-2">Traditional Forensics</h5>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li>Manual memory dump acquisition</li>
+                                    <li>Multi-gigabyte file transfer</li>
+                                    <li>Expert analyst interpretation</li>
+                                    <li>Hours to days timeline</li>
+                                    <li>❌ Post-mortem only</li>
+                                </ul>
+                            </div>
+                            <div class="border border-red-300 p-4 rounded">
+                                <h5 class="font-bold text-red-600 mb-2">Modern Attacks</h5>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li>Machine-speed execution</li>
+                                    <li>Seconds to minutes timeline</li>
+                                    <li>Automated exploitation</li>
+                                    <li>Real-time adaptation</li>
+                                    <li>⚠️ Impossible to catch manually</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">3.3 The Unique Market Gap: Semantic Intent vs. Syntactic Patterns</h3>
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">From Pattern Matching to Semantic Understanding</h4>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-red-600 pl-4">
+                                <h5 class="font-bold">Current Limitation</h5>
+                                <p class="text-gray-700 text-sm">Existing solutions look for known malicious syntax or behavioral sequences, missing novel techniques and zero-day exploits.</p>
+                            </div>
+                            <div class="border-l-4 border-green-600 pl-4">
+                                <h5 class="font-bold">Memcrypt Innovation</h5>
+                                <p class="text-gray-700 text-sm">AI model understands the "grammar" of legitimate operations, detecting malicious intent through semantic analysis of API calls, arguments, and memory patterns.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Proposed Innovation -->
+            <section id="proposed-innovation" class="mb-12 scroll-mt-24">
+                <h2 class="font-bold border-b-4 border-red-600 pb-2 mb-6">4. The Proposed Innovation: The 'Memcrypt' Real-Time Analysis Agent</h2>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">4.1 Architectural Vision</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">Core Design Principles</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="text-center p-4 border border-gray-300 rounded">
+                                <div class="text-2xl mb-2">⚡</div>
+                                <h5 class="font-bold">High Performance</h5>
+                                <p class="text-sm text-gray-600">Minimal CPU/memory overhead for continuous operation</p>
+                            </div>
+                            <div class="text-center p-4 border border-gray-300 rounded">
+                                <div class="text-2xl mb-2">🔧</div>
+                                <h5 class="font-bold">System Privileges</h5>
+                                <p class="text-sm text-gray-600">Direct visibility into user-space and kernel-space memory</p>
+                            </div>
+                            <div class="text-center p-4 border border-gray-300 rounded">
+                                <div class="text-2xl mb-2">🌐</div>
+                                <h5 class="font-bold">OS Agnostic</h5>
+                                <p class="text-sm text-gray-600">No hardware dependencies, works across architectures</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">4.2 The AI-Powered Semantic Forensics Engine</h3>
+                    <div class="space-y-6">
+                        <div class="border border-gray-300 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg mb-3 text-blue-600">🔍 API Call & Argument Analysis</h4>
+                            <p class="text-gray-700 mb-3">Moves beyond simple API sequences to analyze arguments using NLP techniques, understanding context and intent.</p>
+                            <div class="bg-gray-100 p-3 rounded text-sm">
+                                <strong>Example:</strong> NtWriteFile to temp directory = benign; NtWriteFile to System32 = suspicious
+                            </div>
+                        </div>
+
+                        <div class="border border-gray-300 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg mb-3 text-green-600">🧠 Memory Access Pattern Analysis</h4>
+                            <p class="text-gray-700 mb-3">Learns application-specific memory access patterns to detect anomalous behaviors like ROP chain construction.</p>
+                            <div class="bg-gray-100 p-3 rounded text-sm">
+                                <strong>Detection:</strong> Statistical deviation from learned baseline patterns
+                            </div>
+                        </div>
+
+                        <div class="border border-gray-300 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg mb-3 text-red-600">⚙️ Kernel Structure Integrity Analysis</h4>
+                            <p class="text-gray-700 mb-3">Maintains real-time model of critical kernel structures (SSDT, IDT) to detect unauthorized modifications.</p>
+                            <div class="bg-gray-100 p-3 rounded text-sm">
+                                <strong>Protection:</strong> Proactive integrity validation against rootkit hooks
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Flow Diagram 1: System Architecture -->
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">4.3 System Architecture Flow</h3>
+                    <div class="bg-white border border-gray-300 p-6 rounded-lg">
+                        <svg viewBox="0 0 800 400" class="w-full h-auto">
+                            <!-- Memory Layer -->
+                            <rect x="50" y="50" width="150" height="80" fill="#e3f2fd" stroke="#1976d2" stroke-width="2"/>
+                            <text x="125" y="85" text-anchor="middle" font-size="12" font-weight="bold">Volatile Memory</text>
+                            <text x="125" y="105" text-anchor="middle" font-size="10">User & Kernel Space</text>
+
+                            <!-- Analysis Engine -->
+                            <rect x="325" y="150" width="150" height="100" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+                            <text x="400" y="185" text-anchor="middle" font-size="12" font-weight="bold">Semantic Forensics</text>
+                            <text x="400" y="205" text-anchor="middle" font-size="12" font-weight="bold">Engine</text>
+                            <text x="400" y="225" text-anchor="middle" font-size="10">AI-Powered Analysis</text>
+
+                            <!-- Components inside Engine -->
+                            <rect x="335" y="235" width="130" height="15" fill="#e1bee7" stroke="#7b1fa2" stroke-width="1"/>
+                            <text x="400" y="245" text-anchor="middle" font-size="9">API Analysis</text>
+
+                            <rect x="335" y="255" width="130" height="15" fill="#e1bee7" stroke="#7b1fa2" stroke-width="1"/>
+                            <text x="400" y="265" text-anchor="middle" font-size="9">Memory Patterns</text>
+
+                            <rect x="335" y="275" width="130" height="15" fill="#e1bee7" stroke="#7b1fa2" stroke-width="1"/>
+                            <text x="400" y="285" text-anchor="middle" font-size="9">Kernel Integrity</text>
+
+                            <!-- Response Layer -->
+                            <rect x="600" y="175" width="150" height="50" fill="#e8f5e8" stroke="#388e3c" stroke-width="2"/>
+                            <text x="675" y="195" text-anchor="middle" font-size="12" font-weight="bold">Response Engine</text>
+                            <text x="675" y="210" text-anchor="middle" font-size="10">Neutralization Actions</text>
+
+                            <!-- Arrows -->
+                            <defs>
+                                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+                                </marker>
+                            </defs>
+
+                            <!-- Memory to Engine -->
+                            <line x1="200" y1="90" x2="325" y2="200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            <text x="260" y="140" text-anchor="middle" font-size="10">Real-time Analysis</text>
+
+                            <!-- Engine to Response -->
+                            <line x1="475" y1="200" x2="600" y2="200" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+                            <text x="535" y="190" text-anchor="middle" font-size="10">Threat Detected</text>
+
+                            <!-- Continuous Monitoring Loop -->
+                            <path d="M 125 130 Q 125 160 200 160 Q 275 160 325 200" stroke="#1976d2" stroke-width="1" fill="none" stroke-dasharray="5,5"/>
+                            <text x="225" y="155" text-anchor="middle" font-size="9">Continuous Monitoring</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Flow Diagram 2: Threat Detection Process -->
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">4.4 Threat Detection & Neutralization Flow</h3>
+                    <div class="bg-white border border-gray-300 p-6 rounded-lg">
+                        <svg viewBox="0 0 800 500" class="w-full h-auto">
+                            <!-- Start -->
+                            <circle cx="100" cy="50" r="25" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+                            <text x="100" y="55" text-anchor="middle" font-size="10" font-weight="bold" fill="white">START</text>
+
+                            <!-- Memory Monitoring -->
+                            <rect x="50" y="100" width="100" height="50" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+                            <text x="100" y="125" text-anchor="middle" font-size="10" font-weight="bold">Monitor Memory</text>
+
+                            <!-- API Analysis -->
+                            <rect x="200" y="100" width="100" height="50" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+                            <text x="250" y="120" text-anchor="middle" font-size="10" font-weight="bold">API Call</text>
+                            <text x="250" y="135" text-anchor="middle" font-size="9">Analysis</text>
+
+                            <!-- Memory Pattern Analysis -->
+                            <rect x="350" y="100" width="100" height="50" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+                            <text x="400" y="120" text-anchor="middle" font-size="10" font-weight="bold">Memory</text>
+                            <text x="400" y="135" text-anchor="middle" font-size="9">Pattern Analysis</text>
+
+                            <!-- Kernel Integrity Check -->
+                            <rect x="500" y="100" width="100" height="50" fill="#ffebee" stroke="#d32f2f" stroke-width="2" rx="5"/>
+                            <text x="550" y="120" text-anchor="middle" font-size="10" font-weight="bold">Kernel</text>
+                            <text x="550" y="135" text-anchor="middle" font-size="9">Integrity</text>
+
+                            <!-- Decision Point -->
+                            <diamond x="650" y="115" width="80" height="40" fill="#fff9c4" stroke="#f9a825" stroke-width="2"/>
+                            <text x="690" y="135" text-anchor="middle" font-size="9" font-weight="bold">Threat?</text>
+
+                            <!-- Benign Path -->
+                            <rect x="550" y="200" width="80" height="40" fill="#e8f5e8" stroke="#388e3c" stroke-width="2" rx="5"/>
+                            <text x="590" y="220" text-anchor="middle" font-size="9" font-weight="bold">Benign</text>
+
+                            <!-- Malicious Path -->
+                            <rect x="650" y="200" width="80" height="40" fill="#ffebee" stroke="#d32f2f" stroke-width="2" rx="5"/>
+                            <text x="690" y="220" text-anchor="middle" font-size="9" font-weight="bold">Malicious</text>
+
+                            <!-- Neutralization -->
+                            <rect x="650" y="280" width="100" height="50" fill="#e8f5e8" stroke="#388e3c" stroke-width="2" rx="5"/>
+                            <text x="700" y="300" text-anchor="middle" font-size="10" font-weight="bold">Neutralize</text>
+                            <text x="700" y="315" text-anchor="middle" font-size="9">Threat</text>
+
+                            <!-- End -->
+                            <circle cx="700" cy="380" r="25" fill="#4caf50" stroke="#2e7d32" stroke-width="2"/>
+                            <text x="700" y="385" text-anchor="middle" font-size="10" font-weight="bold" fill="white">END</text>
+
+                            <!-- Arrows -->
+                            <defs>
+                                <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+                                </marker>
+                            </defs>
+
+                            <!-- Flow arrows -->
+                            <line x1="125" y1="50" x2="125" y2="100" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+                            <line x1="150" y1="125" x2="200" y2="125" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+                            <line x1="300" y1="125" x2="350" y2="125" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+                            <line x1="450" y1="125" x2="500" y2="125" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+                            <line x1="600" y1="125" x2="650" y2="125" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+
+                            <!-- Decision arrows -->
+                            <line x1="690" y1="155" x2="590" y2="200" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+                            <text x="630" y="175" text-anchor="middle" font-size="8">No</text>
+
+                            <line x1="690" y1="155" x2="690" y2="200" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+                            <text x="700" y="175" text-anchor="middle" font-size="8">Yes</text>
+
+                            <line x1="690" y1="240" x2="700" y2="280" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+                            <line x1="700" y1="330" x2="700" y2="355" stroke="#666" stroke-width="2" marker-end="url(#arrow)"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">4.5 New-to-the-World Capability: From Detection to Preemption</h3>
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">Paradigm Shift: Real-Time Preemption</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="border border-red-300 p-4 rounded">
+                                <h5 class="font-bold text-red-600 mb-2">Current EDR Approach</h5>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li>Wait for malicious behavior</li>
+                                    <li>Pattern matching limitations</li>
+                                    <li>Post-exploit detection</li>
+                                    <li>Damage already occurred</li>
+                                </ul>
+                            </div>
+                            <div class="border border-green-300 p-4 rounded">
+                                <h5 class="font-bold text-green-600 mb-2">Memcrypt Innovation</h5>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li>Detect preparatory actions</li>
+                                    <li>Semantic intent analysis</li>
+                                    <li>Pre-execution neutralization</li>
+                                    <li>Zero damage prevention</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 5: Project Realization -->
+            <section id="project-realization" class="mb-12 scroll-mt-24">
+                <h2 class="font-bold border-b-4 border-red-600 pb-2 mb-6">5. Project Realization and Alignment with Sovereign AI Objectives</h2>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">5.1 Proof of Concept Scope (TRL 3-5)</h3>
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">Development Roadmap</h4>
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-600 pl-4">
+                                <h5 class="font-bold">Phase 1: Foundation (Months 1-2)</h5>
+                                <p class="text-gray-700 text-sm">Infrastructure setup, monitoring implementation, baseline establishment</p>
+                            </div>
+                            <div class="border-l-4 border-green-600 pl-4">
+                                <h5 class="font-bold">Phase 2: Integration (Months 3-4)</h5>
+                                <p class="text-gray-700 text-sm">AI model integration, automation workflows, SRE implementation</p>
+                            </div>
+                            <div class="border-l-4 border-purple-600 pl-4">
+                                <h5 class="font-bold">Phase 3: Optimization (Months 5-6)</h5>
+                                <p class="text-gray-700 text-sm">Performance tuning, advanced analytics, continuous improvement</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">5.2 Data Access and Compute Strategy</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="border border-gray-300 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg mb-3 text-blue-600">📊 Data Sources</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                <li>Benign system traces from real workloads</li>
+                                <li>Malware execution in controlled sandbox</li>
+                                <li>Automated exploit sequence generation</li>
+                                <li>CVE database analysis for vulnerabilities</li>
+                            </ul>
+                        </div>
+                        <div class="border border-gray-300 p-6 rounded-lg">
+                            <h4 class="font-bold text-lg mb-3 text-green-600">⚡ Compute Requirements</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                <li>500-1000 GPU hours for training</li>
+                                <li>NVIDIA A100 or equivalent</li>
+                                <li>Cloud-based infrastructure</li>
+                                <li>Scalable for production deployment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">5.3 Target Markets & Business Model</h3>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-bold text-lg mb-3">Strategic Market Positioning</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="text-center p-4 border border-red-300 rounded">
+                                <div class="text-2xl mb-2">🏛️</div>
+                                <h5 class="font-bold text-red-600">Critical Infrastructure</h5>
+                                <p class="text-sm text-gray-600">Energy, finance, telecom providers</p>
+                            </div>
+                            <div class="text-center p-4 border border-blue-300 rounded">
+                                <div class="text-2xl mb-2">🛡️</div>
+                                <h5 class="font-bold text-blue-600">Government & Defense</h5>
+                                <p class="text-sm text-gray-600">UK departments and defense contractors</p>
+                            </div>
+                            <div class="text-center p-4 border border-green-300 rounded">
+                                <div class="text-2xl mb-2">🏢</div>
+                                <h5 class="font-bold text-green-600">Enterprise Security</h5>
+                                <p class="text-sm text-gray-600">High-value enterprise deployments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 6: Conclusion -->
+            <section id="conclusion" class="mb-12 scroll-mt-24">
+                <h2 class="font-bold border-b-4 border-red-600 pb-2 mb-6">6. Concluding Rationale for Funding: Securing the Future of UK Cyber Defense</h2>
+
+                <div class="bg-red-50 p-6 rounded-lg mb-8">
+                    <h3 class="font-bold text-xl mb-4">Strategic Value Proposition</h3>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-red-600 pl-4">
+                            <h4 class="font-bold">New-to-the-World Capability</h4>
+                            <p class="text-gray-700">Project Memcrypt delivers a fundamental shift from reactive detection to proactive preemption, neutralizing threats before damage occurs.</p>
+                        </div>
+                        <div class="border-l-4 border-blue-600 pl-4">
+                            <h4 class="font-bold">Sovereign AI Advantage</h4>
+                            <p class="text-gray-700">UK-developed technology free from foreign dependencies, specifically designed to counter state-sponsored threat actors.</p>
+                        </div>
+                        <div class="border-l-4 border-green-600 pl-4">
+                            <h4 class="font-bold">Critical Infrastructure Protection</h4>
+                            <p class="text-gray-700">Addresses the most pressing gap in modern cyber defense against advanced persistent threats operating in volatile memory.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg mb-8">
+                    <h3 class="font-bold text-xl mb-4">Investment Impact Metrics</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600 mb-2">99.9%</div>
+                            <div class="text-sm text-gray-600">System Uptime Protection</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-green-600 mb-2">80%</div>
+                            <div class="text-sm text-gray-600">Faster Incident Response</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-red-600 mb-2">£2M+</div>
+                            <div class="text-sm text-gray-600">Annual Cost Savings</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="font-bold text-xl mb-4">Call to Action</h3>
+                    <p class="text-gray-700 mb-4">
+                        Project Memcrypt represents a strategic investment in the UK's digital sovereignty and cyber defense capabilities. By funding this innovative AI solution, the Sovereign AI program will deliver a foundational technology that not only protects critical national infrastructure but also positions the United Kingdom as a global leader in the next generation of artificial intelligence for security.
+                    </p>
+                    <div class="border-l-4 border-red-600 pl-4 bg-red-50 p-4 rounded">
+                        <p class="font-bold text-red-800">This is more than cybersecurity—it's about securing the UK's future in an era of persistent, state-level cyber conflict.</p>
+                    </div>
+                </div>
+            </section>
 
     <footer class="bg-white border-t-8 border-red-600 mt-12">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
