@@ -1,0 +1,18 @@
+# Disable Jekyll processing for static HTML site
+exclude:
+  - "*.html"
+  - "*.css"
+  - "*.js"
+
+# Don't process any files
+include: []
+
+# Use repository root as source
+source: .
+
+# Disable all plugins
+plugins: []
+
+# Skip SCSS processing
+sass:
+  style: compressed
