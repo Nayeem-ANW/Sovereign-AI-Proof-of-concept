@@ -85,70 +85,505 @@
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <div class="bg-white p-6 sm:p-8">
-            <h1 class="font-bold mb-6">DevOps Agent</h1>
+            <h1 class="font-bold mb-6">Sovereign AI DevOps Agent</h1>
 
-            <p class="text-xl text-gray-700 mb-6">
-                An intelligent DevOps Agent designed to automate IT operations, enhance site reliability engineering, generate reports, ensure security, and provide remediation capabilities.
+            <p class="text-xl text-gray-700 mb-8">
+                A comprehensive AI-powered DevOps platform integrating Site Reliability Engineering (SRE), IT Operations, and Security Operations Center (SOC) capabilities for intelligent, automated, and secure infrastructure management.
             </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                <div class="border border-gray-300 p-6">
-                    <h3 class="font-bold text-lg mb-3">IT-Ops Automation</h3>
-                    <p class="text-gray-600">Automated monitoring, alerting, and incident response for seamless operations.</p>
-                </div>
-                <div class="border border-gray-300 p-6">
-                    <h3 class="font-bold text-lg mb-3">Site Reliability Engineering</h3>
-                    <p class="text-gray-600">SLO monitoring, error budget management, and automated reliability improvements.</p>
-                </div>
-                <div class="border border-gray-300 p-6">
-                    <h3 class="font-bold text-lg mb-3">Reports & Analytics</h3>
-                    <p class="text-gray-600">Comprehensive performance dashboards and automated report generation.</p>
-                </div>
-                <div class="border border-gray-300 p-6">
-                    <h3 class="font-bold text-lg mb-3">Security Agent</h3>
-                    <p class="text-gray-600">Continuous security monitoring, threat detection, and compliance automation.</p>
-                </div>
-                <div class="border border-gray-300 p-6">
-                    <h3 class="font-bold text-lg mb-3">Remediation Agent</h3>
-                    <p class="text-gray-600">Automated issue remediation, rollback capabilities, and self-healing systems.</p>
-                </div>
-                <div class="border border-gray-300 p-6">
-                    <h3 class="font-bold text-lg mb-3">Technical Implementation</h3>
-                    <p class="text-gray-600">Modern technology stack with Python, Docker, Kubernetes, and monitoring tools.</p>
+            <!-- Table of Contents -->
+            <div class="border-t border-b border-gray-300 py-6 mb-12">
+                <h2 class="font-bold text-xl mb-4">Table of Contents</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <ol class="list-decimal list-inside space-y-2">
+                            <li><a href="#executive-summary" class="govuk-link">Executive Summary</a></li>
+                            <li><a href="#sre-agent" class="govuk-link">Site Reliability Engineering (SRE) Agent</a></li>
+                            <li><a href="#it-operations" class="govuk-link">IT Operations Center</a></li>
+                            <li><a href="#security-operations" class="govuk-link">Security Operations Center (SOC)</a></li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol class="list-decimal list-inside space-y-2" start="5">
+                            <li><a href="#technical-architecture" class="govuk-link">Technical Architecture</a></li>
+                            <li><a href="#implementation-roadmap" class="govuk-link">Implementation Roadmap</a></li>
+                            <li><a href="#benefits-roi" class="govuk-link">Benefits & ROI</a></li>
+                        </ol>
+                    </div>
                 </div>
             </div>
 
-            <div class="bg-blue-50 p-6 rounded">
-                <h2 class="font-bold text-xl mb-4">Technology Stack</h2>
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                    <div class="border border-gray-300 p-3 text-center">
-                        <div class="font-bold">Python</div>
-                        <div class="text-sm text-gray-600">AI/ML</div>
-                    </div>
-                    <div class="border border-gray-300 p-3 text-center">
-                        <div class="font-bold">Docker</div>
-                        <div class="text-sm text-gray-600">Containerization</div>
-                    </div>
-                    <div class="border border-gray-300 p-3 text-center">
-                        <div class="font-bold">Kubernetes</div>
-                        <div class="text-sm text-gray-600">Orchestration</div>
-                    </div>
-                    <div class="border border-gray-300 p-3 text-center">
-                        <div class="font-bold">Prometheus</div>
-                        <div class="text-sm text-gray-600">Monitoring</div>
-                    </div>
-                    <div class="border border-gray-300 p-3 text-center">
-                        <div class="font-bold">Grafana</div>
-                        <div class="text-sm text-gray-600">Visualization</div>
-                    </div>
-                    <div class="border border-gray-300 p-3 text-center">
-                        <div class="font-bold">Elasticsearch</div>
-                        <div class="text-sm text-gray-600">Logging</div>
+            <!-- Executive Summary -->
+            <section id="executive-summary" class="mb-12 scroll-mt-24">
+                <h2 class="font-bold border-b-4 border-blue-600 pb-2 mb-6">1. Executive Summary</h2>
+                <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-700 mb-4">
+                        The Sovereign AI DevOps Agent represents a paradigm shift in infrastructure management, combining artificial intelligence with proven DevOps methodologies to deliver unprecedented levels of automation, reliability, and security.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-blue-600">99.9%</div>
+                            <div class="text-sm text-gray-600">Uptime SLA</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-green-600">75%</div>
+                            <div class="text-sm text-gray-600">Cost Reduction</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-red-600">24/7</div>
+                            <div class="text-sm text-gray-600">Automated Monitoring</div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </section>
+
+            <!-- SRE Agent Section -->
+            <section id="sre-agent" class="mb-12 scroll-mt-24">
+                <h2 class="font-bold border-b-4 border-blue-600 pb-2 mb-6">2. Site Reliability Engineering (SRE) Agent</h2>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">Core SRE Capabilities</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="border border-gray-300 p-6">
+                            <h4 class="font-bold text-lg mb-3 text-blue-600">🔄 Service Level Objectives (SLOs)</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>Automated SLO monitoring and alerting</li>
+                                <li>Error budget tracking and management</li>
+                                <li>Performance baseline establishment</li>
+                                <li>Real-time compliance monitoring</li>
+                            </ul>
+                        </div>
+                        <div class="border border-gray-300 p-6">
+                            <h4 class="font-bold text-lg mb-3 text-green-600">📊 Reliability Metrics</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>Mean Time Between Failures (MTBF)</li>
+                                <li>Mean Time To Recovery (MTTR)</li>
+                                <li>Service availability tracking</li>
+                                <li>Incident response time analysis</li>
+                            </ul>
+                        </div>
+                        <div class="border border-gray-300 p-6">
+                            <h4 class="font-bold text-lg mb-3 text-purple-600">🔧 Automated Remediation</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>Self-healing system capabilities</li>
+                                <li>Automated failover procedures</li>
+                                <li>Capacity scaling automation</li>
+                                <li>Configuration drift correction</li>
+                            </ul>
+                        </div>
+                        <div class="border border-gray-300 p-6">
+                            <h4 class="font-bold text-lg mb-3 text-orange-600">📈 Predictive Analytics</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>Failure prediction using ML models</li>
+                                <li>Capacity planning recommendations</li>
+                                <li>Performance trend analysis</li>
+                                <li>Risk assessment and mitigation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h3 class="font-bold text-lg mb-4">SRE Implementation Framework</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold">Phase 1: Assessment & Planning</h4>
+                            <p class="text-gray-700">Current state analysis, SLO definition, and reliability baseline establishment</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Phase 2: Monitoring Implementation</h4>
+                            <p class="text-gray-700">Comprehensive monitoring setup, alerting configuration, and dashboard creation</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Phase 3: Automation Deployment</h4>
+                            <p class="text-gray-700">Automated remediation, self-healing systems, and intelligent scaling</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Phase 4: Continuous Optimization</h4>
+                            <p class="text-gray-700">ML-driven optimization, predictive maintenance, and performance tuning</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- IT Operations Center -->
+            <section id="it-operations" class="mb-12 scroll-mt-24">
+                <h2 class="font-bold border-b-4 border-blue-600 pb-2 mb-6">3. IT Operations Center</h2>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">IT Ops Automation Features</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="border border-gray-300 p-6">
+                            <h4 class="font-bold text-lg mb-3 text-blue-600">🎯 Infrastructure Automation</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>Automated server provisioning</li>
+                                <li>Configuration management</li>
+                                <li>Resource optimization</li>
+                                <li>Multi-cloud orchestration</li>
+                            </ul>
+                        </div>
+                        <div class="border border-gray-300 p-6">
+                            <h4 class="font-bold text-lg mb-3 text-green-600">📊 Monitoring & Alerting</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>Real-time performance monitoring</li>
+                                <li>Intelligent alerting system</li>
+                                <li>Log aggregation and analysis</li>
+                                <li>Custom dashboard creation</li>
+                            </ul>
+                        </div>
+                        <div class="border border-gray-300 p-6">
+                            <h4 class="font-bold text-lg mb-3 text-purple-600">🔄 Incident Management</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>Automated incident detection</li>
+                                <li>Intelligent triage and routing</li>
+                                <li>Runbook automation</li>
+                                <li>Post-incident analysis</li>
+                            </ul>
+                        </div>
+                        <div class="border border-gray-300 p-6">
+                            <h4 class="font-bold text-lg mb-3 text-orange-600">📈 Capacity Planning</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>Resource utilization analysis</li>
+                                <li>Auto-scaling recommendations</li>
+                                <li>Cost optimization insights</li>
+                                <li>Future capacity forecasting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <h3 class="font-bold text-lg mb-4">IT Operations Workflow</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">1</div>
+                            <div>
+                                <h4 class="font-bold">Continuous Monitoring</h4>
+                                <p class="text-gray-700">24/7 infrastructure monitoring with AI-powered anomaly detection</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">2</div>
+                            <div>
+                                <h4 class="font-bold">Intelligent Alerting</h4>
+                                <p class="text-gray-700">Context-aware alerts with automated severity assessment</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">3</div>
+                            <div>
+                                <h4 class="font-bold">Automated Response</h4>
+                                <p class="text-gray-700">Pre-defined runbooks executed automatically based on incident type</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">4</div>
+                            <div>
+                                <h4 class="font-bold">Continuous Learning</h4>
+                                <p class="text-gray-700">ML models improve response accuracy over time</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Security Operations Center -->
+            <section id="security-operations" class="mb-12 scroll-mt-24">
+                <h2 class="font-bold border-b-4 border-blue-600 pb-2 mb-6">4. Security Operations Center (SOC)</h2>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">SOC Integration Features</h3>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <div class="border border-gray-300 p-6">
+                            <h4 class="font-bold text-lg mb-3 text-red-600">🛡️ Threat Detection</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>AI-powered threat hunting</li>
+                                <li>Behavioral anomaly detection</li>
+                                <li>Zero-day vulnerability scanning</li>
+                                <li>Advanced persistent threat (APT) monitoring</li>
+                            </ul>
+                        </div>
+                        <div class="border border-gray-300 p-6">
+                            <h4 class="font-bold text-lg mb-3 text-orange-600">🚨 Incident Response</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>Automated incident triage</li>
+                                <li>SOAR integration capabilities</li>
+                                <li>Coordinated response orchestration</li>
+                                <li>Threat containment automation</li>
+                            </ul>
+                        </div>
+                        <div class="border border-gray-300 p-6">
+                            <h4 class="font-bold text-lg mb-3 text-purple-600">📋 Compliance Monitoring</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>Continuous compliance assessment</li>
+                                <li>Automated audit trail generation</li>
+                                <li>Regulatory reporting automation</li>
+                                <li>Risk assessment and scoring</li>
+                            </ul>
+                        </div>
+                        <div class="border border-gray-300 p-6">
+                            <h4 class="font-bold text-lg mb-3 text-blue-600">🔍 Forensic Analysis</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>Automated evidence collection</li>
+                                <li>Timeline reconstruction</li>
+                                <li>Attack pattern analysis</li>
+                                <li>Root cause determination</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-red-50 p-6 rounded-lg">
+                    <h3 class="font-bold text-lg mb-4">SOC-DevOps Integration</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-bold text-red-600">🔗 Unified Security Pipeline</h4>
+                            <p class="text-gray-700">Security controls integrated into CI/CD pipelines with automated security testing and compliance checks.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-orange-600">⚡ Real-time Threat Response</h4>
+                            <p class="text-gray-700">Automated threat response coordinated between SOC and DevOps teams with minimal manual intervention.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-purple-600">📊 Security Analytics Dashboard</h4>
+                            <p class="text-gray-700">Unified dashboard providing security insights alongside operational metrics for comprehensive visibility.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technical Architecture -->
+            <section id="technical-architecture" class="mb-12 scroll-mt-24">
+                <h2 class="font-bold border-b-4 border-blue-600 pb-2 mb-6">5. Technical Architecture</h2>
+
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-4">System Architecture</h3>
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-blue-600 pl-4">
+                                <h4 class="font-bold">AI/ML Layer</h4>
+                                <p class="text-gray-700">Machine learning models for predictive analytics, anomaly detection, and automated decision making</p>
+                            </div>
+                            <div class="border-l-4 border-green-600 pl-4">
+                                <h4 class="font-bold">Orchestration Layer</h4>
+                                <p class="text-gray-700">Kubernetes-based container orchestration with service mesh for microservices management</p>
+                            </div>
+                            <div class="border-l-4 border-purple-600 pl-4">
+                                <h4 class="font-bold">Monitoring Layer</h4>
+                                <p class="text-gray-700">Comprehensive monitoring stack with Prometheus, Grafana, and ELK stack integration</p>
+                            </div>
+                            <div class="border-l-4 border-red-600 pl-4">
+                                <h4 class="font-bold">Security Layer</h4>
+                                <p class="text-gray-700">Multi-layered security with SIEM integration, threat intelligence, and automated response</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg">
+                    <h3 class="font-bold text-lg mb-4">Technology Stack</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="border border-gray-300 p-3 text-center">
+                            <div class="font-bold">Python</div>
+                            <div class="text-sm text-gray-600">AI/ML Core</div>
+                        </div>
+                        <div class="border border-gray-300 p-3 text-center">
+                            <div class="font-bold">Kubernetes</div>
+                            <div class="text-sm text-gray-600">Orchestration</div>
+                        </div>
+                        <div class="border border-gray-300 p-3 text-center">
+                            <div class="font-bold">Prometheus</div>
+                            <div class="text-sm text-gray-600">Monitoring</div>
+                        </div>
+                        <div class="border border-gray-300 p-3 text-center">
+                            <div class="font-bold">Elasticsearch</div>
+                            <div class="text-sm text-gray-600">Analytics</div>
+                        </div>
+                        <div class="border border-gray-300 p-3 text-center">
+                            <div class="font-bold">Docker</div>
+                            <div class="text-sm text-gray-600">Containerization</div>
+                        </div>
+                        <div class="border border-gray-300 p-3 text-center">
+                            <div class="font-bold">Grafana</div>
+                            <div class="text-sm text-gray-600">Visualization</div>
+                        </div>
+                        <div class="border border-gray-300 p-3 text-center">
+                            <div class="font-bold">TensorFlow</div>
+                            <div class="text-sm text-gray-600">ML Framework</div>
+                        </div>
+                        <div class="border border-gray-300 p-3 text-center">
+                            <div class="font-bold">PostgreSQL</div>
+                            <div class="text-sm text-gray-600">Database</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Implementation Roadmap -->
+            <section id="implementation-roadmap" class="mb-12 scroll-mt-24">
+                <h2 class="font-bold border-b-4 border-blue-600 pb-2 mb-6">6. Implementation Roadmap</h2>
+
+                <div class="space-y-6">
+                    <div class="border border-gray-300 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-lg">1</div>
+                            <div class="ml-4">
+                                <h3 class="font-bold text-lg">Foundation Phase (Months 1-2)</h3>
+                                <p class="text-gray-600">Infrastructure setup, monitoring implementation, and baseline establishment</p>
+                            </div>
+                        </div>
+                        <div class="ml-16 space-y-2">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                                <span class="text-sm">Kubernetes cluster deployment</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                                <span class="text-sm">Monitoring stack configuration</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full mr-3"></div>
+                                <span class="text-sm">Security baseline implementation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-300 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-600 text-white rounded-full flex items-center justify-center font-bold text-lg">2</div>
+                            <div class="ml-4">
+                                <h3 class="font-bold text-lg">Integration Phase (Months 3-4)</h3>
+                                <p class="text-gray-600">AI model integration, automation workflows, and SRE implementation</p>
+                            </div>
+                        </div>
+                        <div class="ml-16 space-y-2">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
+                                <span class="text-sm">AI/ML model deployment</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
+                                <span class="text-sm">Automated remediation setup</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
+                                <span class="text-sm">SRE practices implementation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border border-gray-300 p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-lg">3</div>
+                            <div class="ml-4">
+                                <h3 class="font-bold text-lg">Optimization Phase (Months 5-6)</h3>
+                                <p class="text-gray-600">Performance tuning, advanced analytics, and continuous improvement</p>
+                            </div>
+                        </div>
+                        <div class="ml-16 space-y-2">
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
+                                <span class="text-sm">Predictive analytics deployment</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
+                                <span class="text-sm">SOC integration completion</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-2 h-2 bg-purple-600 rounded-full mr-3"></div>
+                                <span class="text-sm">Performance optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefits & ROI -->
+            <section id="benefits-roi" class="mb-12 scroll-mt-24">
+                <h2 class="font-bold border-b-4 border-blue-600 pb-2 mb-6">7. Benefits & ROI</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-green-50 p-6 rounded-lg">
+                        <h3 class="font-bold text-lg mb-4 text-green-600">💰 Cost Savings</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>Reduced manual operations</span>
+                                <span class="font-bold">60% savings</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Automated incident response</span>
+                                <span class="font-bold">75% faster</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Infrastructure optimization</span>
+                                <span class="font-bold">40% cost reduction</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Preventive maintenance</span>
+                                <span class="font-bold">50% fewer incidents</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="font-bold text-lg mb-4 text-blue-600">⚡ Performance Improvements</h3>
+                        <ul class="space-y-2">
+                            <li class="flex justify-between">
+                                <span>System uptime</span>
+                                <span class="font-bold">99.9% SLA</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>MTTR improvement</span>
+                                <span class="font-bold">80% faster</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Resource utilization</span>
+                                <span class="font-bold">30% more efficient</span>
+                            </li>
+                            <li class="flex justify-between">
+                                <span>Security response time</span>
+                                <span class="font-bold">90% faster</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <h3 class="font-bold text-lg mb-4">📊 ROI Projection (3-Year Period)</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse border border-gray-300">
+                            <thead>
+                                <tr class="bg-gray-200">
+                                    <th class="border border-gray-300 p-3 text-left">Metric</th>
+                                    <th class="border border-gray-300 p-3 text-center">Year 1</th>
+                                    <th class="border border-gray-300 p-3 text-center">Year 2</th>
+                                    <th class="border border-gray-300 p-3 text-center">Year 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border border-gray-300 p-3 font-medium">Cost Savings (£)</td>
+                                    <td class="border border-gray-300 p-3 text-center">£500,000</td>
+                                    <td class="border border-gray-300 p-3 text-center">£750,000</td>
+                                    <td class="border border-gray-300 p-3 text-center">£900,000</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="border border-gray-300 p-3 font-medium">Productivity Gains</td>
+                                    <td class="border border-gray-300 p-3 text-center">40%</td>
+                                    <td class="border border-gray-300 p-3 text-center">55%</td>
+                                    <td class="border border-gray-300 p-3 text-center">70%</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 p-3 font-medium">ROI Percentage</td>
+                                    <td class="border border-gray-300 p-3 text-center">85%</td>
+                                    <td class="border border-gray-300 p-3 text-center">150%</td>
+                                    <td class="border border-gray-300 p-3 text-center">220%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
 
     <footer class="bg-white border-t-8 border-blue-600 mt-12">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
