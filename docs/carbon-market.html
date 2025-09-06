@@ -536,6 +536,335 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Detailed Technical Frameworks -->
+                <div class="mb-8">
+                    <h3 class="font-bold text-xl mb-6">Detailed Technical Frameworks</h3>
+
+                    <!-- Part I: Hyperlocal Urban Flood Forecasting -->
+                    <div class="mb-12">
+                        <h4 class="font-bold text-xl mb-4 text-blue-600 border-b-2 border-blue-200 pb-2">Part I: A High-Resolution Spatio-Temporal Framework for Hyperlocal Urban Flood Forecasting</h4>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">1.1 The Imperative for Hyperlocal Resolution in Urban Hydrology</h5>
+                            <p class="text-gray-700 mb-4">Hyperlocal risk modeling identifies, assesses, and visualizes potential risks within very small, geographically defined areas. This approach stands in stark contrast to traditional risk modeling, which operates at much larger regional or national scales.</p>
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h6 class="font-bold mb-2">Key Benefits:</h6>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li>Granular, actionable interventions at street level</li>
+                                    <li>Targeted evacuation and preparedness warnings</li>
+                                    <li>Optimized deployment of flood barriers</li>
+                                    <li>Resilient urban planning based on precise data</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">1.2 Data Ingestion and Fusion Pipeline for the UK Urban Environment</h5>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                <div class="border border-gray-300 p-4 rounded">
+                                    <h6 class="font-bold mb-2">Static Data Layer</h6>
+                                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                        <li><strong>Topography:</strong> LiDAR DTM/DSM from Environment Agency</li>
+                                        <li><strong>Infrastructure:</strong> OS MasterMap building footprints</li>
+                                        <li><strong>Drainage:</strong> Sewer network data from water companies</li>
+                                        <li><strong>Catchment:</strong> FEH descriptors for runoff modeling</li>
+                                    </ul>
+                                </div>
+                                <div class="border border-gray-300 p-4 rounded">
+                                    <h6 class="font-bold mb-2">Dynamic Data Layer</h6>
+                                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                        <li><strong>Precipitation:</strong> Met Office radar (1km, 5-15min)</li>
+                                        <li><strong>River Levels:</strong> NRFA gauges (15min intervals)</li>
+                                        <li><strong>Tidal Data:</strong> Environment Agency forecasts</li>
+                                        <li><strong>Emerging:</strong> Hyperlocal sensor networks</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">1.3 Advanced AI Architectures for Spatio-Temporal Flood Modeling</h5>
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-blue-600 pl-4">
+                                    <h6 class="font-bold">Graph Neural Networks (GNNs)</h6>
+                                    <p class="text-gray-700 text-sm mb-2">Operate directly on irregular, graph-like urban topologies. Represent cities as networks of streets, drains, and flow paths.</p>
+                                    <div class="bg-gray-100 p-2 rounded text-xs">
+                                        <strong>Architecture:</strong> FloodGNN-GRU model with geometric vector perceptrons
+                                    </div>
+                                </div>
+                                <div class="border-l-4 border-green-600 pl-4">
+                                    <h6 class="font-bold">CNN-LSTM Hybrid</h6>
+                                    <p class="text-gray-700 text-sm mb-2">Combines spatial feature extraction with temporal sequence learning for grid-based data.</p>
+                                    <div class="bg-gray-100 p-2 rounded text-xs">
+                                        <strong>Trade-off:</strong> Higher efficiency vs. simplified physical representation
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">1.4 End-to-End Workflow: From TRL 4 Validation to Operational Forecasting</h5>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="border border-gray-300 p-4 rounded">
+                                    <h6 class="font-bold mb-2">Phase 1: TRL 4 Laboratory Validation</h6>
+                                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                        <li>Select 2-3 UK urban districts with flood history</li>
+                                        <li>Assemble spatio-temporally aligned datasets</li>
+                                        <li>Train and validate AI model on historical data</li>
+                                        <li>Produce detailed validation report</li>
+                                    </ul>
+                                </div>
+                                <div class="border border-gray-300 p-4 rounded">
+                                    <h6 class="font-bold mb-2">Phase 2: Operational Forecasting</h6>
+                                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                        <li>Integrate with real-time data pipeline</li>
+                                        <li>Deploy on scalable cloud infrastructure</li>
+                                        <li>Generate rolling 48-hour forecasts</li>
+                                        <li>Disseminate via API and web portal</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">1.5 Stakeholder Engagement and Ethical Considerations</h5>
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <h6 class="font-bold mb-2">Ethical Challenge: Algorithmic Bias</h6>
+                                <p class="text-gray-700 text-sm mb-3">AI models may perpetuate inequalities if trained on imbalanced historical data from wealthier, better-monitored areas.</p>
+                                <h6 class="font-bold mb-2">Framework for Equitable Implementation:</h6>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li>Participatory stakeholder engagement workshops</li>
+                                    <li>Bias auditing and mitigation strategies</li>
+                                    <li>Equitable access to forecast information</li>
+                                    <li>Transparent communication of uncertainty bounds</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Part II: Generative AI for Circular Furniture Design -->
+                    <div class="mb-12">
+                        <h4 class="font-bold text-xl mb-4 text-green-600 border-b-2 border-green-200 pb-2">Part II: A Generative AI Framework for Autonomous Circular Furniture Design</h4>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">2.1 Foundational Principles of Circularity in Furniture Design</h5>
+                            <p class="text-gray-700 mb-4">Transition from linear "take-make-waste" to circular economy principles for furniture design.</p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="border border-gray-300 p-4 rounded">
+                                    <h6 class="font-bold mb-2">Core Circular Principles</h6>
+                                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                        <li>Design for durability and longevity</li>
+                                        <li>Modularity and adaptability</li>
+                                        <li>Design for disassembly (DfD)</li>
+                                        <li>Sustainable material selection</li>
+                                        <li>Waste minimization (dematerialization)</li>
+                                    </ul>
+                                </div>
+                                <div class="border border-gray-300 p-4 rounded">
+                                    <h6 class="font-bold mb-2">Quantifiable Metrics</h6>
+                                    <table class="w-full text-xs">
+                                        <thead>
+                                            <tr class="bg-gray-100">
+                                                <th class="p-1 text-left">Principle</th>
+                                                <th class="p-1 text-left">Metric</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td class="p-1">Waste Min.</td><td class="p-1">Material Utilization Rate (%)</td></tr>
+                                            <tr><td class="p-1">Durability</td><td class="p-1">Simulated Stress (Pa)</td></tr>
+                                            <tr><td class="p-1">Disassembly</td><td class="p-1">DfD Score (0-1)</td></tr>
+                                            <tr><td class="p-1">Materials</td><td class="p-1">MCI Score (0-1)</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">2.2 Technical Architecture for Generative Circular Design</h5>
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-green-600 pl-4">
+                                    <h6 class="font-bold">Data Pipeline for Sustainable Materials</h6>
+                                    <p class="text-gray-700 text-sm">Comprehensive database of sustainable materials with physical properties, environmental impact, and circularity attributes.</p>
+                                </div>
+                                <div class="border-l-4 border-blue-600 pl-4">
+                                    <h6 class="font-bold">Generative Model Selection</h6>
+                                    <p class="text-gray-700 text-sm">3D Diffusion Models (e.g., MeshDiffusion) for generating complex, manufacturable objects directly in mesh format.</p>
+                                </div>
+                                <div class="border-l-4 border-purple-600 pl-4">
+                                    <h6 class="font-bold">Fine-Tuning Process</h6>
+                                    <p class="text-gray-700 text-sm">Specialize pre-trained models for circular design using LoRA (Low-Rank Adaptation) for computational efficiency.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">2.3 Multi-Objective Optimization for Circularity</h5>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h6 class="font-bold mb-2">Problem Formulation</h6>
+                                <p class="text-gray-700 text-sm mb-3">Multi-objective optimization to find optimal trade-offs between conflicting circularity objectives.</p>
+                                <h6 class="font-bold mb-2">NSGA-II Algorithm Integration</h6>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li>Generate initial population of design candidates</li>
+                                    <li>Evaluate against circularity objective functions</li>
+                                    <li>Select fittest designs for next generation</li>
+                                    <li>Evolve through crossover and mutation</li>
+                                    <li>Converge towards Pareto front of optimal solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">2.4 End-to-End Workflow: From TRL 3 Proof-of-Concept to TRL 4 Validation</h5>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="border border-gray-300 p-4 rounded">
+                                    <h6 class="font-bold mb-2">Phase 1: TRL 3 Analytical PoC</h6>
+                                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                        <li>Curate dataset of circular furniture designs</li>
+                                        <li>Fine-tune diffusion model on dataset</li>
+                                        <li>Demonstrate generation from text prompts</li>
+                                        <li>Integrate basic optimization objectives</li>
+                                    </ul>
+                                </div>
+                                <div class="border border-gray-300 p-4 rounded">
+                                    <h6 class="font-bold mb-2">Phase 2: TRL 4 Component Validation</h6>
+                                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                        <li>Full system integration with materials database</li>
+                                        <li>Generate Pareto front of optimized designs</li>
+                                        <li>Digital validation (FEA, manufacturability)</li>
+                                        <li>Physical prototyping of selected designs</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">2.5 Ecosystem Stakeholders and Ethical Design Imperatives</h5>
+                            <div class="bg-orange-50 p-4 rounded-lg">
+                                <h6 class="font-bold mb-2">Ethical Challenge: IP and Originality</h6>
+                                <p class="text-gray-700 text-sm mb-3">Generative models trained on existing works raise copyright and originality concerns.</p>
+                                <h6 class="font-bold mb-2">Responsible Innovation Framework:</h6>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li>Data provenance and ethical sourcing</li>
+                                    <li>Transparency and algorithmic attribution</li>
+                                    <li>Human-in-the-loop design process</li>
+                                    <li>Co-evolutionary partnership between AI and designers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Part III: Peatland Restoration Monitoring -->
+                    <div class="mb-12">
+                        <h4 class="font-bold text-xl mb-4 text-purple-600 border-b-2 border-purple-200 pb-2">Part III: A Computer Vision System for Peatland Restoration and Carbon Credit Verification</h4>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">3.1 The Critical Role of Peatlands in Carbon Sequestration and Biodiversity</h5>
+                            <p class="text-gray-700 mb-4">Peatlands hold more carbon than all world's forests combined but are under threat from degradation and drainage.</p>
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <h6 class="font-bold mb-2">Restoration Imperative:</h6>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li>Urgent priority for climate mitigation and biodiversity</li>
+                                    <li>Scalable monitoring methods needed for verification</li>
+                                    <li>Support high-integrity carbon credit markets</li>
+                                    <li>Enable adaptive management of restoration projects</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">3.2 Data Acquisition and Annotation Workflow for Peatland Health Indicators</h5>
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-purple-600 pl-4">
+                                    <h6 class="font-bold">Data Acquisition Strategy</h6>
+                                    <p class="text-gray-700 text-sm">High-resolution UAV imagery with RGB and multispectral sensors, processed via Structure-from-Motion photogrammetry.</p>
+                                </div>
+                                <div class="border-l-4 border-blue-600 pl-4">
+                                    <h6 class="font-bold">Health Indicators Classification</h6>
+                                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                        <li>Healthy vegetation (Sphagnum moss, cottongrass)</li>
+                                        <li>Degraded/Invasive vegetation (purple moor grass, bracken)</li>
+                                        <li>Physical features (bare peat, erosion gullies, drainage ditches)</li>
+                                        <li>Hydrological features (open pools, surface wetness indicators)</li>
+                                    </ul>
+                                </div>
+                                <div class="border-l-4 border-green-600 pl-4">
+                                    <h6 class="font-bold">Annotation Process</h6>
+                                    <p class="text-gray-700 text-sm">Collaborative annotation using CVAT platform with multi-annotator review for quality assurance and consistency.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">3.3 Deep Learning Architecture for Semantic Segmentation of Peatland Ecosystems</h5>
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h6 class="font-bold mb-2">U-Net Architecture for Semantic Segmentation</h6>
+                                <p class="text-gray-700 text-sm mb-3">Industry-standard for pixel-level classification with encoder-decoder structure and skip connections.</p>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <h6 class="font-bold mb-2">Encoder (Contracting)</h6>
+                                        <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                            <li>Convolutional and max-pooling layers</li>
+                                            <li>Progressive down-sampling</li>
+                                            <li>Learns high-level contextual features</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h6 class="font-bold mb-2">Decoder (Expanding)</h6>
+                                        <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                            <li>Transposed convolutions</li>
+                                            <li>Skip connections for spatial detail</li>
+                                            <li>Precise boundary delineation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">3.4 End-to-End Workflow: From TRL 4 Validation to TRL 5 Demonstration</h5>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="border border-gray-300 p-4 rounded">
+                                    <h6 class="font-bold mb-2">Phase 1: TRL 4 Laboratory Validation</h6>
+                                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                        <li>Split annotated dataset (70% train, 15% val, 15% test)</li>
+                                        <li>Train U-Net model on GPU cluster</li>
+                                        <li>Validate against held-out test set</li>
+                                        <li>Achieve >90% mIoU accuracy target</li>
+                                    </ul>
+                                </div>
+                                <div class="border border-gray-300 p-4 rounded">
+                                    <h6 class="font-bold mb-2">Phase 2: TRL 5 Real-World Demonstration</h6>
+                                    <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                        <li>Partner with UK conservation organizations</li>
+                                        <li>Conduct coordinated field campaign</li>
+                                        <li>Compare model predictions vs. ground-truth surveys</li>
+                                        <li>Validate in relevant operational environment</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <h5 class="font-bold text-lg mb-3">3.5 Application in Carbon Credit Verification and Future Directions</h5>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h6 class="font-bold mb-2">Measurement, Reporting, and Verification (MRV)</h6>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li><strong>Measurement:</strong> Objective, repeatable ecological indicators</li>
+                                    <li><strong>Reporting:</strong> Standardized, auditable reports for registries</li>
+                                    <li><strong>Verification:</strong> Third-party validation of restoration outcomes</li>
+                                </ul>
+                                <h6 class="font-bold mb-2 mt-4">Future Directions:</h6>
+                                <ul class="list-disc list-inside space-y-1 text-gray-700 text-sm">
+                                    <li>Multispectral/hyperspectral sensor integration</li>
+                                    <li>Carbon flux modeling from land cover classifications</li>
+                                    <li>National-scale deployment for comprehensive inventories</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- Strategic Roadmap -->
